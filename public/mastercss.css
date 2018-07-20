@@ -6,3 +6,8 @@ h1 {
     color: navy;
     margin-left: 20px;
 }
+btn btn-default {
+    margin-top:20px;
+    color: pink;
+    
+}
