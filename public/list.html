@@ -12,7 +12,7 @@
   </div>
   <div class="col-md-2">
    
-    <a style="margin-top:20px" class="btnspace btn btn-default " href="#/new/contact">New</a>
+    <a style="margin-top:20px" class="btn btn-default " href="#/new/contact">New</a>
   </div>
   <div class="col-md-1">
   </div>
@@ -23,7 +23,7 @@
  <tr ng-repeat="contact in contacts | orderBy:'lastName'" style="cursor:pointer">
          <td>
   
-          <a ng-href="#/contact/{{contact._id}}">{{ contact.firstName }} {{ contact.lastName }} <button style="margin-top:20px" class="btnspace btnedit btn-defaultedit" ng-click="deleteContact(contact._id)">Edit</button></a>
+          <a ng-href="#/contact/{{contact._id}}">{{ contact.firstName }} {{ contact.lastName }} <button class="btnspace btnedit btn-defaultedit" ng-click="deleteContact(contact._id)">Edit</button></a>
          
          </td>
     </tbody>
