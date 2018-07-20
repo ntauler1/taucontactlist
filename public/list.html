@@ -21,7 +21,7 @@
   <table class="table table-hover">
     <tbody>
  <tr ng-repeat="contact in contacts | orderBy:'lastName'" style="cursor:pointer">
-         <td>
+         <td style="padding-right:150px">
   
           <a ng-href="#/contact/{{contact._id}}">{{ contact.firstName }} {{ contact.lastName }} <button class="btnspace btnedit btn-defaultedit" ng-click="deleteContact(contact._id)">Edit</button></a>
          
