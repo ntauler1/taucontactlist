@@ -8,6 +8,6 @@ h1 {
 }
 btn btn-default {
     margin-top:20px;
-    color: pink;
+    color: pink !important;
     
 }
