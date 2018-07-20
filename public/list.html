@@ -17,8 +17,9 @@
     <tbody>
       <tr ng-repeat="contact in contacts | orderBy:'lastName'" style="cursor:pointer">
         <td>
-          <a ng-href="#/contact/{{contact._id}}">{{ contact.firstName }} {{ contact.lastName }} <button style="margin-top:20px" class="btn btn-default" ng-click="deleteContact(contact._id)">Delete</button></a>
+          <a ng-href="#/contact/{{contact._id}}">{{ contact.firstName }} {{ contact.lastName }}</a>
         </td>
+         <a href="#/"><button style="margin-top:20px" class="btn btn-default" ng-click="deleteContact(contact._id)">Delete</button></a>
       </tr>
     </tbody>
   </table>
