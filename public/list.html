@@ -2,9 +2,9 @@
 <link rel="stylesheet" type="text/css" href="boot.css">
 </head>
 
-<div style="margin-left:150px; padding-right:200px" class = "row">
+<div style="margin-left:150px; padding-right:70px" class = "row">
   <div class="col-md-6">
-    <h2>
+    <h2 style="font-size:50px">
       Contacts
     </h2>
   </div>
@@ -12,7 +12,7 @@
   </div>
   <div class="col-md-2">
    
-    <a style="margin-top:20px" class="btn btn-default " href="#/new/contact">New</a>
+  
   </div>
   <div class="col-md-1">
   </div>
@@ -21,11 +21,12 @@
   <table class="table table-hover">
     <tbody >
  <tr ng-repeat="contact in contacts | orderBy:'lastName'" style="cursor:pointer">
-         <td style="padding-right:100px">
+         <td style="padding-right:100px; padding-left:100px">
   
-          <a ng-href="#/contact/{{contact._id}}">{{ contact.firstName }} {{ contact.lastName }} <button class="btnspace btnedit btn-defaultedit" ng-click="deleteContact(contact._id)">Edit</button></a>
+          <a style="font-size:30px" ng-href="#/contact/{{contact._id}}">{{ contact.firstName }} {{ contact.lastName }} <button class="btnspace btnedit btn-defaultedit" ng-click="deleteContact(contact._id)">Edit</button></a>
          
          </td>
+     <a style="margin-top:20px" class="btn btn-default " href="#/new/contact">New</a>
     </tbody>
   </table>
 </div>
