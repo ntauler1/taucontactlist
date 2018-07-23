@@ -60,10 +60,10 @@
     <th style="width:40%;">Country</th>
   </tr>
   <tr ng-repeat="contact in contacts | orderBy:'lastName'" style="cursor:pointer">
-    <td style="padding-right:100px; padding-left:100px" >
-          <p style="font-size:30px" >{{ contact.firstName }} {{ contact.lastName }} </p>
+    <td>
+          <p>{{ contact.firstName }} {{ contact.lastName }} </p>
     </td>
-    <td> <a style="font-size:30px" ng-href="#/contact/{{contact._id}}">  
+    <td> <a ng-href="#/contact/{{contact._id}}">  
       <p ng-if="contact.company"> {{ contact.company }}</p>
      </a>
     </td>
