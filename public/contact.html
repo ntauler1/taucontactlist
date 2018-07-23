@@ -14,8 +14,8 @@
 </div>
 <div style="margin-left:100px; padding-right:200px; padding-bottom: 40px;" ng-hide="editMode" class="container">
   <div>
-    <p ng-if="contact.firstname">First Name: {{ contact.firstname }}</p>
-    <p ng-if="contact.firstname">Last Name: {{ contact.lastname }}</p>
+    <p ng-if="contact.firstname">First Name: {{ contact.firstName }}</p>
+    <p ng-if="contact.firstname">Last Name: {{ contact.lastName }}</p>
     <p ng-if="contact.email">email: <a ng-href="mailto:{{ contact.email }}" target="_blank">{{ contact.email }}</a></p>
     <p ng-if="contact.phone.mobile">phone (m): {{ contact.phone.mobile }} </p>
     <p ng-if="contact.phone.work">phone (w): {{ contact.phone.work }} </p>
