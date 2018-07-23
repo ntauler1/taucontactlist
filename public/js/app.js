@@ -126,6 +126,6 @@ angular.module("contactsApp", ['ngRoute'])
 
 // When the user clicks on <div>, open the popup
 function myFunction() {
-    var popup = document.getElementById("contact._id");
+    var popup = document.getElementById("contactId");
     popup.classList.toggle("show");
 }
