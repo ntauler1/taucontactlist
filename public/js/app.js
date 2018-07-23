@@ -19,9 +19,11 @@ angular.module("contactsApp", ['ngRoute'])
                 templateUrl: "contact.html"
             })
             .when("/contactus.html", {
+                controller: "ListController",
                 templateUrl: "contactus.html"
             })
             .when("/about.html", {
+               
                 templateUrl: "about.html"
             })
             .otherwise({
