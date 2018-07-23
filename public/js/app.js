@@ -18,6 +18,12 @@ angular.module("contactsApp", ['ngRoute'])
                 controller: "EditContactController",
                 templateUrl: "contact.html"
             })
+            .when("/contactus", {
+                templateUrl: "contactus.html"
+            })
+            .when("/about", {
+                templateUrl: "about.html"
+            })
             .otherwise({
                 redirectTo: "/"
             })
