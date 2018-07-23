@@ -25,13 +25,13 @@
   
           <a style="font-size:30px" ng-href="#/contact/{{contact._id}}">{{ contact.firstName }} {{ contact.lastName }} </a>
          
-        </td>
+        
     <tr ng-repeat="contact in contacts | orderBy:'lastName'" style="cursor:pointer">
       <button class="btnspace btnedit btn-defaultedit" ng-click="deleteContact(contact._id)">Edit</button>
       
       </tr>
            
-   
+   </td>
     </tbody>
     
   </table>
