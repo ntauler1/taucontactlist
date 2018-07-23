@@ -18,11 +18,11 @@ angular.module("contactsApp", ['ngRoute'])
                 controller: "EditContactController",
                 templateUrl: "contact.html"
             })
-            .when("/contactus.html", {
+            .when("/contactus", {
                 controller: "ListController",
                 templateUrl: "contactus.html"
             })
-            .when("/about.html", {
+            .when("/about", {
                
                 templateUrl: "about.html"
             })
