@@ -19,7 +19,7 @@
 </div>
 <div style="margin-left:100px; padding-right:200px" class="container">
   <table class="table table-hover; popup" onclick="myFunction()">
-    <span class="popuptext" id="myPopup">{{ contact.firstName }} {{ contact.lastName }} {{ contact.email }} {{ contact.address }}</span>
+   
     <tbody >
  <tr ng-repeat="contact in contacts | orderBy:'lastName'" style="cursor:pointer">
    
@@ -31,7 +31,7 @@
    </td>
          <td style="padding-right:100px; padding-left:100px" >
           <p style="font-size:30px" >{{ contact.firstName }} {{ contact.lastName }} </p>
-         
+          <span class="popuptext" id="contact._id">{{ contact.firstName }} {{ contact.lastName }} {{ contact.email }} {{ contact.address }}</span>
          </td>
    
     <td>
