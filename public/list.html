@@ -18,41 +18,7 @@
   </div>
 </div>
 <div style="margin-left:100px; padding-right:200px" class="container">
-  <table class="table table-hover; popup" onclick="myFunction()">
-   
-    <tbody >
- <tr ng-repeat="contact in contacts | orderBy:'lastName'" style="cursor:pointer">
-   
-   
-   <td>
-     <a style="font-size:30px" ng-href="#/contact/{{contact._id}}">  
-      <p ng-if="contact.company"> {{ contact.company }}</p>
-     </a>
-   </td>
-         <td style="padding-right:100px; padding-left:100px" >
-          <p style="font-size:30px" >{{ contact.firstName }} {{ contact.lastName }} </p>
-          
-   </td>
-   
-    <td>
-     <a ng-href="#/contact/{{contact._id}}">  
-       <button class="btnedit btn-defaultedit" ng-click="deleteContact(contact._id)">Edit</button>
-      </a>
-      
-  
-   </td>
-      </tr>
-   </tbody>
-  </table>
-</div>
 
-<h2>Tooltip</h2>
-<p>Move the mouse over the text below:</p>
-
-<div class="tooltip">Hover over me
-  <span class="tooltiptext">Tooltip text</span>
-</div>
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
 
 <table id="myTable">
   <tr class="header">
