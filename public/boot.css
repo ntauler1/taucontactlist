@@ -343,7 +343,7 @@ a.list-group-item-success .list-group-item-heading{color:inherit}a.list-group-it
     padding: 12px; /* Add padding */
 }
 
-#contactmyTable tr {
+#contactTable tr {
     /* Add a bottom border to all table rows */
     border-bottom: 1px solid #ddd; 
 }
